@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.calendar-container {
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    text-align: center;
+    background-color: #edf8f8;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col-2 {
+    width: 500px;
+    margin: 15px;
+}
+
+.calendar-arrow-container {
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #838585;
+}
+
+.calendar-left-arrow,
+.calendar-right-arrow {
+    height: 30px;
+    width: 30px;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #2e8a87;
+    margin: 5px 10px;
+}
+
+.calendar-week {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding-inline-start: 0px;
+    color: #0daea9;
+    font-weight: bold;
+}
+
+.calendar-days {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding-inline-start: 0px;
+}
+
+.day {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.day-muted {
+    color: rgb(133, 133, 133);
+}
+
+.calendar-date {
+    height: clamp(500px, 300px, 420px);
+    width: clamp(350px, 280px, 400px);
+    max-width: 350px;
+    max-height: 500px;
+    background: #39adaa;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.weekday,
+.year,
+.month ,
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d7efef;
+}
+
+.weekday {
+    height: 15%;
+    background: #2e8a87;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.date {
+    font-size: 7rem;
+    font-weight: 900;
+    position: relative;
+    bottom: -20px;
+}
+
+.month {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.year {
+    position: absolute;
+    bottom: 10px;
+    left: 120px;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #cde6e5;
+}
